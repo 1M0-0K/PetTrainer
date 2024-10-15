@@ -1,7 +1,7 @@
 # Pet Trainer
 A simple game where you catch, fight, and trains pets. The game is a **Work in Progress**, only the wild fight are available to a degree. 
 
-![Website Preview](/screenshots/town.png)
+![Website Preview](/screenshots/town.jpg)
 
 ## Technologies
 - FrontEnd: 
@@ -22,15 +22,15 @@ A simple game where you catch, fight, and trains pets. The game is a **Work in P
 ## Preview
 The game is based on PokeAPI. On the first login you have to choose a pet from 3 different opctions.
 
-![Website Welcome Screen](/screenshots/starter.png)
+![Website Welcome Screen](/screenshots/starter.jpg)
 
 You can view your pets in the inventory:
 
-![Game inventory](/screenshots/inventory.png)
+![Game inventory](/screenshots/inventory.jpg)
 
 To create a battle loadout you need to go to the loadout and choose a slot and a pet from your inventory:
 
-![Game loadout](/screenshots/loadout.png)
+![Game loadout](/screenshots/loadout.jpg)
 
-![Pet select](/screenshots/select.png)
+![Pet select](/screenshots/select.jpg)
 
