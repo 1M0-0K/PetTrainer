@@ -14,7 +14,7 @@ A simple game where you catch, fight, and trains pets. The game is a **Work in P
 
 ## Setup
 1. Create a database
-2. Use the sql files from config directory to create tabels
+2. Use the sql files from config directory to create tables
 3. Update the database.php file from config directory with your data
 4. Enjoy!
  
