@@ -1,0 +1,497 @@
+p.pixel-text{
+  display: flex;
+}
+
+i.letter{
+  min-width: calc(var(--scale) * 5px);
+  width: calc(var(--scale) * 5px);
+  height: calc(var(--scale) * 7px);
+  display: inline-block;
+  margin: 0 calc(var(--scale) * 0.5px);
+  position: relative;
+}
+
+i.space{
+  width: calc(var(--scale) * 5px);
+  height: calc(var(--scale) * 7px);
+  display: inline-block;
+}
+
+i.slash{
+  background: linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat;
+}
+
+i.colon{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 2px), transparent calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) repeat-y;
+}
+
+i.dot{
+  min-width: calc(var(--scale) * 1px);
+  width: calc(var(--scale) * 1px);
+  background: linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 6px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.dotbk{
+  min-width: calc(var(--scale) * 3px);
+  width: calc(var(--scale) * 3px);
+  background: linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.arond{
+  background: 
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y;
+}
+
+i.n0{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 4px) calc(var(--scale) * 5px) repeat-x,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y;
+}
+
+i.n1{
+  background: linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 6px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.n2{
+  background: linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 6px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.n3{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y,
+              linear-gradient(to bottom, currentColor 0 0 ) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 2px), transparent calc(var(--scale) * 2px)) calc(var(--scale) * 0px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) repeat-y,
+              linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) repeat-y;
+}
+
+i.n4{
+  background: linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 3px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.n5{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 0px) 0/ calc(var(--scale) * 4px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px),transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat;
+}
+
+i.n6{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat;
+}
+
+i.n7{
+  background: linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 0px) calc(var(--scale) * 0px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.n8{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px)) calc(var(--scale) * 0px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) repeat-y;
+}
+
+i.n9{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat;
+}
+
+i.cap-a{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 4px) calc(var(--scale) * 7px) repeat-x;
+}
+
+i.cap-b{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) 0 0/ calc(var(--scale) * 4px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, currentColor 0 0 ) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to bottom, transparent calc(var(--scale) * 1px), currentColor calc(var(--scale) * 1px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) repeat-y;
+}
+
+i.cap-c{
+  background: linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 1px)) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.cap-d{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 4px) calc(var(--scale) * 5px) repeat-x,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) 0 0/ calc(var(--scale) * 4px) calc(var(--scale) * 6px) repeat-y;
+}
+
+i.cap-e{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) 0 0/ calc(var(--scale) * 4px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, currentColor 0 0 ) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px),  transparent calc(var(--scale) * 6px), currentColor calc(var(--scale) * 6px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.cap-f{
+  background: linear-gradient(to bottom, currentColor 0 0) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor 0 0 ) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.cap-g{
+  background: linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y,
+              linear-gradient(to bottom, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 4px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 1px)) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.cap-h{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 3px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-i{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 6px), currentColor calc(var(--scale) * 6px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.cap-j{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 6px), currentColor calc(var(--scale) * 6px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 7px) no-repeat,
+             linear-gradient(to bottom, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 5px), currentColor calc(var(--scale) * 5px)) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat;
+}
+
+i.cap-k{
+  background: linear-gradient(to bottom, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor 0 0 ) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 2px), transparent calc(var(--scale) * 2px), transparent calc(var(--scale) * 4px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) repeat-y,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat;
+}
+
+i.cap-l{
+  background: linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 6px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.cap-m{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 1px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-n{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-o{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 4px) calc(var(--scale) * 5px) repeat-x,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 6px) repeat-y;
+}
+
+i.cap-p{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) 0 0/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor  0 0) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 5px) calc(var(--scale) * 2px) no-repeat; 
+}
+
+i.cap-q{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) repeat-x,
+              linear-gradient(to bottom, currentColor 0 0) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) 0 calc(var(--scale) * 5px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor  0 0) calc(var(--scale) * 2px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 2px), transparent calc(var(--scale) * 2px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-r{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) 0 0/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor  0 0) 0 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 5px) calc(var(--scale) * 2px) no-repeat, 
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 calc(var(--scale) * 4px)/ calc(var(--scale) * 5px) calc(var(--scale) * 4px) no-repeat;
+}
+
+i.cap-s{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px) ) calc(var(--scale) * 1px) 0/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px),transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 4px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat,
+              linear-gradient(to top, currentColor calc(var(--scale) * 1px),transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat;
+}
+
+i.cap-t{
+  background: linear-gradient(to left, currentColor 0 0 ) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to left, currentColor 0 0 ) calc(var(--scale) * 2px) 0/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.cap-u{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 6px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-v{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 6px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-w{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-x{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 calc(var(--scale) * 5px)/ calc(var(--scale) * 5px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor  0 0) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 4px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-y{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor  0 0) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor calc(var(--scale) * 1px) , transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.cap-z{
+  background: linear-gradient(to right, currentColor 0 0 ) 0 calc(var(--scale) * 6px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0 ) 0 0/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0 ) calc(var(--scale) * 4px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0 ) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0 ) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0 ) calc(var(--scale) * 1px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat, 
+              linear-gradient(to right, currentColor 0 0 ) 0 calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.a{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat;
+}
+
+i.b{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 4px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat;
+}
+
+i.c{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 4px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat;
+}
+
+i.d{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 4px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.e{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 2px), transparent calc(var(--scale) * 2px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat;
+}
+
+i.f{
+  background: 
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 2px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) 0/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 1px)/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat;
+}
+
+i.g{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.g::after{
+  content: "";
+  width: calc(var(--scale) * 3px);
+  height: calc(var(--scale) * 1px);
+  background: currentColor;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: calc(var(--scale) * -1px);
+  margin-left: calc(var(--scale) * 1px);
+}
+
+i.h{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.i{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 6px)/ calc(var(--scale) * 5px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.j{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 3px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat;
+}
+
+i.k{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 3px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 7px) no-repeat;
+}
+
+i.l{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat;
+}
+
+i.m{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 3px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 3px)/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) repeat-x;
+}
+
+i.n{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 3px)/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) repeat-x;
+}
+
+i.o{
+  background: 
+              linear-gradient(to bottom,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 4px) repeat-y,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 3px)/ calc(var(--scale) * 4px) calc(var(--scale) * 3px) repeat-x;
+}
+
+i.p{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.p::after{
+  content: "";
+  width: calc(var(--scale) * 1px);
+  height: calc(var(--scale) * 1px);
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: calc(var(--scale) * -1px);
+  margin-left: calc(var(--scale) * 0px);
+}
+
+i.q{
+  background: linear-gradient(to bottom, transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) repeat-y,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat;
+}
+
+i.q::after{
+  content: "";
+  width: calc(var(--scale) * 1px);
+  height: calc(var(--scale) * 1px);
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: calc(var(--scale) * -1px);
+  margin-left: calc(var(--scale) * 4px);
+}
+
+i.r{
+  background: linear-gradient(to right, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 3px), currentColor calc(var(--scale) * 3px)) calc(var(--scale) * 1px) calc(var(--scale) * 3px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 2px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.s{
+  background: linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px),  currentColor calc(var(--scale) * 2px), currentColor calc(var(--scale) * 3px), transparent calc(var(--scale) * 3px), transparent calc(var(--scale) * 4px), currentColor calc(var(--scale) * 4px)) calc(var(--scale) * 1px) calc(var(--scale) * 2px)/ calc(var(--scale) * 3px) calc(var(--scale) * 5px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 6px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) 0 calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat;
+}
+
+i.t{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 6px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 0px)/ calc(var(--scale) * 1px) calc(var(--scale) * 6px) no-repeat;
+}
+
+i.u{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) repeat-x;
+}
+
+i.v{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 6px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 3px) repeat-x,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) repeat-x;
+}
+
+i.w{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 4px) repeat-x,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) calc(var(--scale) * 6px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) repeat-x;
+}
+
+i.x{
+  background: 
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 2px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) repeat-x,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 6px)/ calc(var(--scale) * 4px) calc(var(--scale) * 1px) repeat-x,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) repeat-x,
+              linear-gradient(to right,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 1px) calc(var(--scale) * 3px)/ calc(var(--scale) * 2px) calc(var(--scale) * 1px) repeat-x;
+}
+
+i.y{
+  background: linear-gradient(to bottom,  currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px), transparent calc(var(--scale) * 2px), currentColor calc(var(--scale) * 2px)) calc(var(--scale) * 1px) calc(var(--scale) * 4px)/ calc(var(--scale) * 3px) calc(var(--scale) * 3px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 4px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 4px) no-repeat,
+              linear-gradient(to right, currentColor 0 0) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 1px) calc(var(--scale) * 2px) no-repeat;
+}
+
+i.z{
+  background: 
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 3px) calc(var(--scale) * 3px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 2px) calc(var(--scale) * 4px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to right, currentColor, currentColor) calc(var(--scale) * 1px) calc(var(--scale) * 5px)/ calc(var(--scale) * 1px) calc(var(--scale) * 1px) no-repeat,
+              linear-gradient(to bottom, currentColor calc(var(--scale) * 1px), transparent calc(var(--scale) * 1px)) calc(var(--scale) * 0px) calc(var(--scale) * 2px)/ calc(var(--scale) * 5px) calc(var(--scale) * 4px) repeat-y;
+}
+
